@@ -3,8 +3,18 @@ def calcular_imc():
     altura = input("Informe sua altura (m): ")
     
     if peso and altura:
-        print("Dados recebidos.")
-    else:
+        pezo = float (peso)
+        altura = float (altura)
+        imc = peso / altura * altura
+        print ("Seu IMC é:", imc)
+        
+        if inc < 18.5:
+            print("Abaixo do peso.")
+        elif inc < 25:
+            print("Peso ideal.")
+        else
+            print("Acima do peso.")
+    else
         print("Você precisa informar peso e altura.")
 
 calcular_imc()
